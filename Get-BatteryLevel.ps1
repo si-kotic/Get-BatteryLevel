@@ -1,4 +1,8 @@
 function Get-BatteryLevel {
+    <#
+    .LINK
+    https://github.com/si-kotic/Get-BatteryLevel
+    #>
     $BatteryLevel = (Get-CimInstance -ClassName Win32_battery).EstimatedChargeRemaining[0] / 10
 
     0..10 | ForEach-Object {
