@@ -7,10 +7,10 @@ function Get-BatteryLevel {
 
     0..10 | ForEach-Object {
         if ($_ -le $BatteryLevel) {
-            write-host "▓" -NoNewline -ForegroundColor "DarkCyan"
+            write-host ([char]9619) -NoNewline -ForegroundColor "DarkCyan"
 	}
 	else {
-	    write-host "░" -NoNewline
+	    write-host ([char]9617) -NoNewline
         }
     }
     $BatteryPercent = $BatteryLevel * 10
