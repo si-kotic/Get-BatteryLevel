@@ -14,5 +14,5 @@ function Get-BatteryLevel {
         }
     }
     $BatteryPercent = $BatteryLevel * 10
-    Write-Host " ($BatteryPercent%)"
+    Write-Host " ($BatteryPercent%) " -NoNewLine
 }
