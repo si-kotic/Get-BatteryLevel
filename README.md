@@ -6,7 +6,13 @@ Get-BatteryLevel displays a graphical representation of the current battery char
 Get-BatteryLevel
 ```
 ### Example
+On Battery
 ```
 C:\>Get-BatteryLevel
-▓▓▓▓▓▓▓▓▓▓░ (98%)
+[bat]▓▓▓▓▓▓▓▓▓▓░ (98%)
+```
+On A/C Power
+```
+C:\>Get-BatteryLevel
+[a/c]▓▓▓▓▓▓▓▓▓▓░ (98%)
 ```
