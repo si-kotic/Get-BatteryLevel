@@ -9,10 +9,10 @@ Get-BatteryLevel
 On Battery
 ```
 C:\>Get-BatteryLevel
-[bat]▓▓▓▓▓▓▓▓▓▓░ (98%)
+☨▓▓▓▓▓▓▓▓▓▓░ (98%)
 ```
 On A/C Power
 ```
 C:\>Get-BatteryLevel
-[a/c]▓▓▓▓▓▓▓▓▓▓░ (98%)
+⚡▓▓▓▓▓▓▓▓▓▓░ (98%)
 ```

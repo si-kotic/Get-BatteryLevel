@@ -6,9 +6,9 @@ function Get-BatteryLevel {
     $Battery = Get-CimInstance -ClassName Win32_battery
 
     IF ($Battery.BatteryStatus -eq 1) {
-        $ChargingStatus = "[bat]"
+        $ChargingStatus = ([char]9768)
     } ELSE {
-        $ChargingStatus = "[a/c]"
+        $ChargingStatus = ([char]9889)
     }
     Write-Host "$ChargingStatus" -NoNewline
 
