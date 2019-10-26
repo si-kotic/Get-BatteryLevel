@@ -16,7 +16,11 @@ function Get-BatteryLevel {
 
     0..10 | ForEach-Object {
         if ($_ -le $BatteryLevel) {
-            write-host ([char]9619) -NoNewline -ForegroundColor "DarkCyan"
+            IF ($BatteryLevel -le 3) {
+                write-host ([char]9619) -NoNewline -ForegroundColor "DarkRed"
+            } ELSE {
+                write-host ([char]9619) -NoNewline -ForegroundColor "DarkCyan"
+            }
 	}
 	else {
 	    write-host ([char]9617) -NoNewline
